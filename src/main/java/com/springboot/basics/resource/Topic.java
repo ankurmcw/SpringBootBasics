@@ -1,4 +1,4 @@
-package com.springboot.basics.topic;
+package com.springboot.basics.resource;
 
 /**
  * Created by renuka on 29/3/17.
