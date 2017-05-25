@@ -13,6 +13,13 @@ import java.util.List;
 @Service
 public class TopicService {
 
+    /*private List <Topic> topicList = Arrays.asList(
+            new Topic("id", "courseName", "description"),
+            new Topic("id", "courseName", "description"),
+            new Topic("id", "courseName", "description"),
+            new Topic("id", "courseName", "description")
+    );*/
+
     private List <Topic> topicList = new ArrayList<Topic>();
 
     public List<Topic> getAllTopics() {

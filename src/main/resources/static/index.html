@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <title></title>
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.13/css/jquery.dataTables.min.css" />
+    <script type="text/javascript" language="javascript" src="http://code.jquery.com/jquery-1.12.4.js"></script>
+    <script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.10.13/js/jquery.dataTables.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            //var resp = {"data":[{"id":"QA1111","courseName":"Java","description":"Test Description"}]};
+            //var resp = [["QA1111","Java","Test Description"]];
+            $('#example').DataTable( {
+                ajax: {
+                    url: '/topics',
+                    dataSrc: ''
+                },
+                "columns": [
+                    {"data": "id"},
+                    {"data": "courseName"},
+                    {"data": "description"}
+                ]
+            } );
+        } );
+	</script>
+</head>
+<body>
+<br/>
+<br/>
+<br/>
+<table id="example" class="display" cellspacing="0" width="100%">
+    <thead>
+    <tr>
+        <th>id</th>
+        <th>courseName</th>
+        <th>description</th>
+    </tr>
+    </thead>
+</table>
+</body>
+</html>
